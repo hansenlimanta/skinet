@@ -85,7 +85,7 @@ namespace API.Controllers
         public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
         {
 
-            var spec = new BrandListSpecification();
+            var spec = new TypeListSpecification();
             
             return Ok(await repo.ListAsync(spec));
         }
